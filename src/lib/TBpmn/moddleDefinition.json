@@ -1,0 +1,87 @@
+{
+  "name": "ix",
+  "uri": "https://ix",
+  "prefix": "ix",
+  "types": [
+    {
+      "name": "Document",
+      "superClass": ["bpmn:Task"],
+      "properties": [
+        {
+          "name": "documentProperty",
+          "type": "String"
+        }
+      ]
+    },
+    {
+      "name": "Diamond",
+      "superClass": ["bpmn:Task"],
+      "properties": [
+        {
+          "name": "DiamondProperty",
+          "type": "String"
+        }
+      ]
+    },
+    {
+      "name": "Terminal",
+      "superClass": ["bpmn:Task"],
+      "properties": [
+        {
+          "name": "TerminalProperty",
+          "type": "String"
+        }
+      ]
+    },
+    {
+      "name": "Connector",
+      "superClass": ["bpmn:Task"],
+      "properties": [
+        {
+          "name": "ConectorProperty",
+          "type": "String"
+        }
+      ]
+    },
+    {
+      "name": "LogicGate",
+      "superClass": ["bpmn:Task"],
+      "properties": [
+        {
+          "name": "LogicGateProperty",
+          "type": "String"
+        }
+      ]
+    },
+    {
+      "name": "Text",
+      "superClass": ["bpmn:Task"],
+      "properties": [
+        {
+          "name": "TextProperty",
+          "type": "String"
+        }
+      ]
+    },
+    {
+      "name": "MagneticTape",
+      "superClass": ["bpmn:Task"],
+      "properties": [
+        {
+          "name": "MagneticTapeProperty",
+          "type": "String"
+        }
+      ]
+    },
+    {
+      "name": "StoredData",
+      "superClass": ["bpmn:Task"],
+      "properties": [
+        {
+          "name": "StoredDataProperty",
+          "type": "String"
+        }
+      ]
+    }
+  ]
+}
