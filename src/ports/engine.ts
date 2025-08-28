@@ -65,11 +65,11 @@ class diagramEngine implements DiagramApi {
   async exportDiagram() {
     const data = await this.modeler?.saveXML();
     const currentXML = normalizeXML(data?.xml);
-    console.log(currentXML);
+    return currentXML;
   }
   async exportImage() {
     const data = await this.modeler?.saveSVG();
-    console.log(data);
+    return data?.svg;
   }
 }
 
