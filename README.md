@@ -80,6 +80,32 @@ The Bridge pattern was used to decouple the BPMN engine logic (implementation) f
 - BPMN engine initialization inside the provider to avoid state issues.
 - Refactored code to avoid duplication and ease maintenance.
 
+# Testing
+
+This project uses **Vitest** and **@testing-library/react** for unit and integration testing. All main modules (diagram, ports, utils) have professional tests covering their API and behavior.
+
+## How to Run Tests
+
+1. Run all tests:
+
+```bash
+pnpm test
+# or
+npm test
+```
+
+2. Run a specific test file:
+
+```bash
+pnpm test src/diagram/Diagram.integration.test.tsx
+```
+
+## Test Coverage
+
+- **diagram/**: Integration tests for context/provider and UI menu.
+- **ports/**: Unit tests for engine, service, and API interfaces, using mocks for dependencies.
+- **utils/**: Unit tests for utility functions, including DOM and browser API mocking.
+
 # How to Clone and Run the Project
 
 1. Clone the repository:
