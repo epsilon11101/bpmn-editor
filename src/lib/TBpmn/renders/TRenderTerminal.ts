@@ -14,7 +14,7 @@ import EventBus from "diagram-js/lib/core/EventBus";
 
 export default class TRenderTerminal extends BaseRenderer {
   private labelRenderer;
-  private bpmnRenderer: BpmnRenderer;
+  bpmnRenderer: BpmnRenderer;
 
   constructor(
     eventBus: EventBus,

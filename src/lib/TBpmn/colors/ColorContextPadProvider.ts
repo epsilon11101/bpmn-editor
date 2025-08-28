@@ -11,7 +11,7 @@ const colorImageSvg = `<svg xmlns="http://www.w3.org/2000/svg" width="22" height
 export default class ColorContextPadProvider implements ContextPadProvider {
   private _contextPad: ContextPad;
   private _popupMenu: PopupMenu;
-  private _canvas: Canvas;
+  _canvas: Canvas;
 
   constructor(contextPad: ContextPad, popupMenu: PopupMenu, canvas: Canvas) {
     this._contextPad = contextPad;
