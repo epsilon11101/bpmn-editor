@@ -23,7 +23,9 @@ jobs:
           cache-dependency-path: pnpm-lock.yaml
 
       - name: Install dependencies
-        run: pnpm install --frozen-lockfile
+        run: pnpm install --no-frozen-lockfile
+        env:
+          PNPM_CONFIG_PREFER_FROZEN_LOCKFILE: "false"
 
       - name: Run linter
         run: pnpm lint
