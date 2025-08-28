@@ -24,6 +24,11 @@ jobs:
         with:
           version: 8
 
+      - name: Verify pnpm installation
+        run: pnpm --version
+        shell: bash
+        # This step ensures pnpm is available in the PATH
+
       - name: Install dependencies
         run: pnpm install
 
