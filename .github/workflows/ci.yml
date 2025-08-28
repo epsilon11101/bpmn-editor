@@ -10,33 +10,28 @@ jobs:
   build-and-test:
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout repository
-        uses: actions/checkout@v4
+      - uses: actions/checkout@v4
 
-      - name: Set up Node.js
-        uses: actions/setup-node@v4
+      - uses: actions/setup-node@v4
         with:
           node-version: 20
-          cache: "npm"
-
-      - name: Install pnpm
-        uses: pnpm/action-setup@v2
+          cache: pnpm
+          cache-dependency-path: pnpm-lock.yaml
+      - uses: pnpm/action-setup@v2
         with:
           version: 8
 
       - name: Verify pnpm installation
         run: pnpm --version
-        shell: bash
-        # This step ensures pnpm is available in the PATH
 
       - name: Install dependencies
-        run: pnpm install
+        run: pnpm install --frozen-lockfile
 
       - name: Run linter
         run: pnpm lint
 
       - name: Run tests
-        run: pnpm test
+        run: pnpm test -- --ci
 
       - name: Build project
         run: pnpm build
