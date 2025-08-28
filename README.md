@@ -2,7 +2,7 @@
 
 ## Demo Video
 
-<video src="assets/video.mov" controls width="600"></video>
+[![Demo BPMN Editor](https://img.youtube.com/vi/xBKdVnqVK54/0.jpg)](https://youtu.be/xBKdVnqVK54)
 
 ## Overview
 
