@@ -6,8 +6,8 @@ export interface DiagramApi {
   getCapabilities(): Capabilities;
   mount(container: HTMLElement): Promise<void>;
   destroy(): void;
-  exportDiagram(): Promise<void>;
-  exportImage(): Promise<void>;
+  exportDiagram(): Promise<string>;
+  exportImage(): Promise<string>;
 }
 
 export type DiagramEngine = DiagramApi;
