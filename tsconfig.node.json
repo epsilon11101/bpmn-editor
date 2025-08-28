@@ -12,7 +12,7 @@
     "verbatimModuleSyntax": true,
     "moduleDetection": "force",
     "noEmit": true,
-
+    "types": ["@testing-library/jest-dom"],
     /* Linting */
     "strict": false,
     "noUnusedLocals": true,
