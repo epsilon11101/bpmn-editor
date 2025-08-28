@@ -1,5 +1,9 @@
 # BPMN Editor
 
+## Demo Video
+
+<video src="assets/video.mov" controls width="600"></video>
+
 ## Overview
 
 This project is a visual BPMN diagram editor built with React, TypeScript, Vite, and TailwindCSS. It allows you to create, view, modify, and download BPMN diagrams, including custom extensions and color tools.
